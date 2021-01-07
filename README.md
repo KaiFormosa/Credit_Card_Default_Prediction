@@ -1,6 +1,6 @@
 # Credit Card Default Prediction 
 
-- Source: University of California Irvine Machine Learning Repository (https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients)
+- Data Source: University of California Irvine Machine Learning Repository (https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients)
 - Attribute Information
     - This research employed a binary variable, default payment (Yes = 1, No = 0), as the response variable. The following 23 variables used as explanatory variables:
     - X1: Amount of the given credit (NT dollar): it includes both the individual consumer credit and his/her family (supplementary) credit.
