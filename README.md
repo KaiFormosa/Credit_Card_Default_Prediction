@@ -31,4 +31,9 @@
         | Accuracy Mean | 0.659 | 0.759 |0.676|
         | Recall        | 0.547 | 0.706 |0.571|
         | ROC-AUC       | 0.718 | 0.836 |0.755|
-        
+    3. Evaluation metrics on testing data
+        |  | Logistic Regression |
+        | :---: | :---: |
+        | Accuracy | 0.766 |
+        | Recall        | 0.665 |
+        | Precision       | 0.732 |
