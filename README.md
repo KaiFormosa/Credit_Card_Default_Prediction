@@ -26,9 +26,9 @@
         - Random Forest
         - Support Vector Machine
     2. Random Forest has the best accuracy and recall score using 5-fold cross validation on the training set
-        | Models | Logistic Regression | Random Forest |
-        | :---: | :---: | :---: |
-        | Accuracy mean | 301 | 283 |
-        | Recall | 301 | 283 |
-        | ROC-AUC | 301 | 283 |
+        |  | Logistic Regression | Random Forest | Support Vector Machine |
+        | :---: | :---: | :---: |:---: |
+        | Accuracy Mean | 0.659 | 0.759 |0.676|
+        | Recall        | 0.547 | 0.706 |0.571|
+        | ROC-AUC       | 0.718 | 0.836 |0.755|
         
