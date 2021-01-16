@@ -14,24 +14,24 @@
     - X18-X23: Amount of previous payment (NT dollar). X18 = amount paid in September, 2005; X19 = amount paid in August, 2005; . . .;X23 = amount paid in April, 2005. 
 
 - Issues and Approaches
-    1. Certain values in attributes are unclear. For example, in past payment history attributes, -1 means pay duly and 1 means payment delay for one month. However, there are 0 and -2 in the dataset.
-    2. New attributes created, such as percentage of credit line used, total number of months with delayed payment, payment delay.
-    3. The data is imbalanced. Rows with positive label account for only 22% of the dataset. ADASYN oversampling technique was applied.
-    4. Dummy variables were created for nominal attributes, such as "Education" and "Marriage"
-    5. Standard scaler applied
+    - Certain values in attributes are unclear. For example, in past payment history attributes, -1 means pay duly and 1 means payment delay for one month. However, there are 0 and -2 in the dataset.
+    - New attributes created, such as percentage of credit line used, total number of months with delayed payment, payment delay.
+    - The data is imbalanced. Rows with positive label account for only 22% of the dataset. ADASYN oversampling technique was applied.
+    - Dummy variables were created for nominal attributes, such as "Education" and "Marriage"
+    - Standard scaler applied
     
 - Model Training and Results
-    1. Three Models were selected for training:
+    - Three Models were selected for training:
         - Logistic Regression
         - Random Forest
         - Support Vector Machine
-    2. Random Forest has the best accuracy and recall score using 5-fold cross validation on the training set
+    - Random Forest has the best accuracy and recall score using 5-fold cross validation on the training set
         |  | Logistic Regression | Random Forest | Support Vector Machine |
         | :---: | :---: | :---: |:---: |
         | Accuracy Mean | 0.659 | 0.759 |0.676|
         | Recall        | 0.547 | 0.706 |0.571|
         | ROC-AUC       | 0.718 | 0.836 |0.755|
-    3. Evaluation metrics on testing data
+    - Evaluation metrics on testing data
         |  | Random Forest |
         | :---: | :---: |
         | Accuracy | 0.766 |
