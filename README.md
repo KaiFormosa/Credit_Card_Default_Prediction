@@ -13,14 +13,22 @@
     - X12-X17: Amount of bill statement (NT dollar). X12 = amount of bill statement in September, 2005; X13 = amount of bill statement in August, 2005; . . .; X17 = amount of bill statement in April, 2005.
     - X18-X23: Amount of previous payment (NT dollar). X18 = amount paid in September, 2005; X19 = amount paid in August, 2005; . . .;X23 = amount paid in April, 2005. 
 
-- Approaches
-    1. Quick checkup of the data:
-        - Dataset size 30000 rows * 25 columns (attributes)
-        - Column name revised to corresponding month/year
-        - Check data type and missing values
-        - Check mean, standard deviation and distribution of values of each attribute
-    2. Create a training set for data exploration
-        - Check correlation between each pair of attribute
-        - Check if distribution of attribute categories changes between the default and non-default group
-        
+- Issues and Approaches
+    1. Certain values in attributes are unclear. For example, in past payment history attributes, -1 means pay duly and 1 means payment delay for one month. However, there are 0 and -2 in the dataset.
+    2. New attributes created, such as percentage of credit line used, total number of months with delayed payment, payment delay.
+    3. The data is imbalanced. Rows with positive label account for only 22% of the dataset. ADASYN oversampling technique was applied.
+    4. Dummy variables were created for nominal attributes, such as "Education" and "Marriage"
+    5. Standard scaler applied
+    
+- Model Training and Results
+    1. Three Models were selected for training:
+        - Logistic Regression
+        - Random Forest
+        - Support Vector Machine
+    2. Random Forest has the best accuracy and recall score using 5-fold cross validation on the training set
+        | Models | Logistic Regression | Random Forest |
+        | :---: | :---: | :---: |
+        | Accuracy mean | 301 | 283 |
+        | Recall | 301 | 283 |
+        | ROC-AUC | 301 | 283 |
         
