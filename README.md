@@ -32,7 +32,7 @@
         | Recall        | 0.547 | 0.706 |0.571|
         | ROC-AUC       | 0.718 | 0.836 |0.755|
     3. Evaluation metrics on testing data
-        |  | Logistic Regression |
+        |  | Random Forest |
         | :---: | :---: |
         | Accuracy | 0.766 |
         | Recall        | 0.665 |
